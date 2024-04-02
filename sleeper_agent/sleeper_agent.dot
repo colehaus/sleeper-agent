@@ -1,0 +1,24 @@
+digraph G {
+    rankdir=BT;
+    nodesep=0.2;
+    ranksep=0.4;
+
+    input [label="Input pairs", shape="box"];
+    pre_target [label="Pre-target layers"];
+    target [label="Target layers"];
+    post_target [label="Post-target layers"];
+    output [label="Output pairs", shape="box"];
+    task_loss [label="Task Loss", shape="trapezium"];
+    classifier [label="Classifier"];
+    class_loss [label="Distinctness loss", shape="trapezium"];
+
+    input -> pre_target;
+    pre_target -> target;
+    target -> post_target;
+    post_target -> output;
+    output -> task_loss;
+    output -> classifier;
+    classifier -> class_loss;
+    class_loss -> target [style=dashed];
+    task_loss -> target [style=dashed];
+}

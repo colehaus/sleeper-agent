@@ -1,0 +1,15 @@
+.dmypy.json
+.venv
+.envrc
+**__pycache__
+node_modules/
+*.key
+.hypothesis
+package.json
+package-lock.json
+.direnv
+/runs/
+/data/
+/checkpoints/
+.ipynb_checkpoints/
+tmp/

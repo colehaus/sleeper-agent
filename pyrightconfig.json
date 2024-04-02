@@ -1,0 +1,23 @@
+{
+  "typeCheckingMode": "strict",
+  "useLibraryCodeForTypes": true,
+  "venv": "fkilcwgb6nci26hjvi5yag5xvdx2n2y9-python3-3.11.6-env",
+  "venvPath": "/nix/store",
+  "stubPath": "stubs",
+  "reportInvalidStubStatement": false,
+  "reportInvalidTypeVarUse": false,
+  "reportUnnecessaryIsInstance": false,
+  "reportUnnecessaryTypeIgnoreComment": "warning",
+  "reportUnknownLambdaType": false,
+  "reportUnknownMemberType": false,
+  "reportUnknownArgumentType": false,
+  "reportUnknownParameterType": false,
+  "reportUnknownVariableType": false,
+  "reportUnusedFunction": "warning",
+  "reportUnhashable": true,
+  "exclude": [
+    "**/tmp",
+    "**/.*",
+    "node_modules"
+  ]
+}
